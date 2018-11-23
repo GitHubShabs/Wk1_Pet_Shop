@@ -35,7 +35,13 @@ def stock_count(pet_shop)
 
 end
 
-# def test_stock_count
-  #   count = stock_count(@pet_shop)
-  #   assert_equal(6, count)
-# end
+def pets_by_breed(pet_shop, breed)
+  pet_arr = pet_shop[:pets]
+  found_pets = []
+  for pet in pet_arr
+    if pet[:breed] == breed
+      found_pets.push(pet)
+    end
+end
+return found_pets
+end
