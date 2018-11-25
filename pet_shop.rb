@@ -66,3 +66,29 @@ def find_pet_by_name(pet_shop, name)
   end
 return nil
 end
+
+
+def find_pet_by_name_returns_nil(pet_shop, name)
+  pet_arr = pet_shop[:pets]
+  for pet in pet_arr
+    if pet[:name] == name
+      return pet
+    end
+  end
+return nil
+end
+
+# this one didnt pass
+# def find_pet_by_name(pet_shop, name)
+#   pet_arr = pet_shop[:pets]
+#   for pet in pet_arr
+#     if pet[:name] == name
+#     end
+#     :pet.delete{|key,value|}
+#   end
+
+
+def add_pet_to_stock(pet_shop, new_pet)
+number = pet_shop[:pets].count + [:new_pet].count
+return number
+end
