@@ -92,3 +92,9 @@ def add_pet_to_stock(pet_shop, new_pet)
 number = pet_shop[:pets].count + [:new_pet].count
 return number
 end
+
+
+def customer_cash(array_1,amount)
+  array_1 = pet_shop[:customers][:cash].values
+  return array1.first()
+end
