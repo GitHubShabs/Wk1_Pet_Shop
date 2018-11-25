@@ -56,3 +56,13 @@ def test_all_pets_by_breed__not_found(pet_shop, breed)
 end
 return found_pets
 end
+
+def find_pet_by_name(pet_shop, name)
+  pet_arr = pet_shop[:pets]
+  for pet in pet_arr
+    if pet[:name] == name
+      return pet
+    end
+  end
+return nil
+end
