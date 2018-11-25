@@ -45,3 +45,14 @@ def pets_by_breed(pet_shop, breed)
 end
 return found_pets
 end
+
+def test_all_pets_by_breed__not_found(pet_shop, breed)
+  pet_arr = pet_shop[:pets]
+  found_pets = []
+  for pet in pet_arr
+    if pet[:breed] == breed
+      found_pets.push(pet)
+    end
+end
+return found_pets
+end
